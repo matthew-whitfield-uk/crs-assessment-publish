@@ -1,0 +1,14 @@
+
+.animalContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.animalListContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+
+  padding: 1rem;
+
+}

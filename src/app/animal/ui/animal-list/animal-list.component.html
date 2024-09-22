@@ -1,0 +1,10 @@
+<h1>List of {{ name }}</h1>
+
+@for (animal of list; track animal.id ) {
+
+<div class="animalBox">
+  <div>Name: {{ animal.name }}</div>
+  <div>Traits: {{ animal.traits }}</div>
+</div>
+
+}

@@ -20,10 +20,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('crs-assessment-publish');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, crs-assessment-publish');
-  });
 });

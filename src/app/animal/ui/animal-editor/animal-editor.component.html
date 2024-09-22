@@ -1,0 +1,47 @@
+<div class="animalEditorContainer">
+  <div class="animalEditorHeaderContainer">
+    <h1>Editting {{ name$ | async }}</h1>
+
+    <button (click)="saveAndClose()">OK</button>
+    <button (click)="cancelAndClose()">Cancel</button>
+  </div>
+
+  <div class="animalEditorListContainer">
+    <div>
+      <div>
+        <h2>Current {{ name$ | async }}</h2>
+      </div>
+
+      <button (click)="removeAllItems()">Remove all</button>
+
+      @for (animal of animalCurrentSet$ | async; track animal.id ) {
+      <div class="animal">
+        <div>Name: {{ animal.name }}</div>
+
+        <div>Traits: {{ animal.traits }}</div>
+
+        <button (click)="removeItem(animal.id)">Remove</button>
+      </div>
+      }
+    </div>
+
+    <div>
+      <div>
+        <h2>Superset of {{ name$ | async }}</h2>
+      </div>
+
+      <button (click)="addAllItems()">Add all</button>
+
+      @for (animal of superSet$ | async; track animal.id ) {
+      <div class="animal">
+        <div>Name: {{ animal.name }}</div>
+
+        <div>Traits: {{ animal.traits }}</div>
+
+        <button (click)="addItem(animal.id)">Add</button>
+      </div>
+
+      }
+    </div>
+  </div>
+</div>

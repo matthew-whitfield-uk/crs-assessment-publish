@@ -1,0 +1,29 @@
+<div class="animalContainer">
+
+  <div class="animalListContainer">
+
+    @if (animalLists$ | async; as animalList) {
+
+      @for (key of animalList | keyvalue; track key.key ) {
+
+        <div>
+          <app-animal-list [name]="key.key" [list]="key.value" ></app-animal-list>
+
+        <button (click)="startEditting(key.key)">Select</button>
+        </div>
+
+      }
+
+    }
+
+  </div>
+
+
+  <app-animal-editor *ngIf="isEditing$ | async" ></app-animal-editor>
+
+
+
+
+
+
+</div>

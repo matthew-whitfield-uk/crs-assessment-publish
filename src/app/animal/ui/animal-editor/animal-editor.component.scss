@@ -1,0 +1,25 @@
+.animalEditorContainer {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.animalEditorHeaderContainer {
+  button {
+    margin-right: 0.5rem;
+  }
+}
+
+.animalEditorListContainer {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.animal {
+  padding: 0.25rem;
+  margin: 0.25rem 0;
+  button {
+    width: 100%;
+  }
+}

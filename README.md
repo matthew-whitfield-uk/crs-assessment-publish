@@ -1,14 +1,6 @@
-# CrsAssessmentPublish
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -18,10 +10,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Notes on functionality
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+While the core functionality has been implemented, a few areas could not be due to time constraints:
 
-## Further help
+- **Superset sorting and filtering:** The superset of items should be sortable and filterable to help users find items more easily. 
+  
+- **Subset reordering (move up/down):** The subset of items should have the ability to reorder items (e.g., move items up or down). 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Testing and refactoring:** The application could benefit from a more comprehensive suite of tests, along with an associated refactor to improve maintainability.
+
+Despite these limitations, the core logic and structure of the application are in place and can be extended to include these enhancements in the future.
+
